@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="style/reset.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/alura_logo.png" alt="alura logo">
+        <img src="assets/one_logo.png" alt="oracle one logo">
+        <nav class="header_menu">
+        </nav>
+    </header>
+    <main class="container"> 
+        <section class="container_content"> 
+            <div class="container_input_text">
+                <textarea id="inputText" placeholder="  Digite seu texto."></textarea>
+                <p class="validacao" id="validacaoMsg"> Use apenas letras minúscalas e sem acento.</p>
+            </div>
+            <div class="container_buttons">
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <div id="outputText" class="output">
+            <img src="assets/image_text_not_found_green.png">
+
+            <h2 class="output_title">Nenhuma mensagem encontrada</h2>
+
+            <p class="output_text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Projeto por Matheus Alves, 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-primaria: #fefcfb;
+    --cor-secundaria: #82a579;
+    --fonte-primaria: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 34px;
+}
+
+.header img {
+    max-height: 96px; 
+    margin-right: 20px; 
+}
+
+.header img:last-child {
+    margin-right: 0; 
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    padding: 5%;
+    padding-top: 0%;
+    gap: 100px;
+}
+
+.container_input_text {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 5px;
+    width: 48%; /* Ajustei a largura para diminuir o espaço */
+}
+
+textarea {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+    resize: none;
+    width: 680px;
+    height: 600px;
+    border: none;
+    outline: none;
+    padding: 34px 0px;
+}
+
+textarea::placeholder {
+    color: var(--cor-secundaria);
+}
+
+.validacao {
+    font-size: 12px;
+    color: var(--cor-secundaria);
+    margin-top: 8px;
+    font-family: var(--fonte-primaria);
+    font-size: 12px;
+}
+
+.container_buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 680px;
+}
+
+.container_buttons button {
+    background-color: #82A579;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 0;
+    cursor: pointer;
+    border-radius: 15px;
+    flex: 1;
+    font-family: var(--fonte-primaria);
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+    justify-content: center;
+    width: 680px; /* Ajuste a largura para que corresponda ao textarea */
+    border: 2px solid #ccc;
+    border-radius: 32px;
+    background-color: #f9f9f9;
+    padding: 5%;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+}
+
+.output img {
+    width: 80%;
+}
+
+.output_title {
+    width: 80%;
+    font-size: 1.5em;
+    font-weight: 700; 
+    margin: 0 auto;
+    color: #3d4b39;
+}
+
+.output_text {
+    width: 80%;
+    font-size: 1em;
+    margin: 0 auto;
+    color: var(--cor-secundaria);
+}
+
+.output button {
+    background-color: transparent;
+    border: 0.2rem solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    padding: 2vh 2vw;
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: var(--fonte-primaria);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajuste a altura conforme necessário */
+    background-color: #f9f9f9; /* Ajuste a cor conforme necessário */
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
