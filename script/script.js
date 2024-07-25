@@ -61,14 +61,14 @@ function mostrarTexto(texto) {
             </div>
             <div class="output_after">
                 <p class="output_text"></p>
-                <button onClick = "copiaTexto()">Copiar</button>
+                <button onClick = "copiarTexto()">Copiar</button>
             </div>`;
 }
 
 function mostrarPadrao(titulo, paragrafo) {
     const outputText = document.getElementById('outputText');
     outputText.innerHTML = `
-        <p class="output_text"></p>
+        
         <img src="assets/image_text_not_found_green.png" id="outputImage">
         <div class="output_box_text">
             <h2 class="output_title">${titulo}</h2>
@@ -78,6 +78,7 @@ function mostrarPadrao(titulo, paragrafo) {
 }
 
 function copiarTexto(){
-    let textoGerado = document.getElementById('output_text').value;
+    let textoGerado = document.querySelector('.output_text').innerText;
     navigator.clipboard.writeText(textoGerado);
 }
+
