@@ -34,7 +34,7 @@ body {
 
 .container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding: 5%;
     padding-top: 0%;
     gap: 100px;
@@ -43,9 +43,9 @@ body {
 .container_input_text {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     padding: 5px;
-    width: 48%; /* Ajustei a largura para diminuir o espaço */
+    width: 48%;
 }
 
 textarea {
@@ -70,7 +70,6 @@ textarea::placeholder {
     color: var(--cor-secundaria);
     margin-top: 8px;
     font-family: var(--fonte-primaria);
-    font-size: 12px;
 }
 
 .container_buttons {
@@ -97,16 +96,24 @@ textarea::placeholder {
 .output {
     display: flex;
     flex-direction: column;
-    gap: 1.2em;
+    gap: 1em;
     align-items: center;
-    justify-content: center;
-    width: 680px; /* Ajuste a largura para que corresponda ao textarea */
+    width: 680px;
     border: 2px solid #ccc;
     border-radius: 32px;
     background-color: #f9f9f9;
-    padding: 5%;
+    padding: 2% 2%;
     text-align: center;
     font-family: var(--fonte-primaria);
+    word-wrap: break-word; /* Garante que o texto não saia do contêiner */
+}
+
+.output_text {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+    width: 100%; /* Garante que o texto se ajuste ao contêiner */
+    overflow-wrap: break-word; /* Garante a quebra de linha no texto longo */
 }
 
 .output img {
@@ -116,12 +123,19 @@ textarea::placeholder {
 .output_title {
     width: 80%;
     font-size: 1.5em;
-    font-weight: 700; 
+    font-weight: 700;
     margin: 0 auto;
     color: #3d4b39;
 }
 
-.output_text {
+.output_box_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.output_text_alert {
     width: 80%;
     font-size: 1em;
     margin: 0 auto;
@@ -132,21 +146,26 @@ textarea::placeholder {
     background-color: transparent;
     border: 0.2rem solid var(--cor-secundaria);
     color: var(--cor-secundaria);
-    padding: 2vh 2vw;
+    padding: 1vh 2vw; /* Ajusta o padding para um tamanho mais adequado */
     text-align: center;
     font-size: 1rem;
-    width: 80%;
+    width: 80%; /* Garante que o botão não fique muito pequeno */
     cursor: pointer;
     border-radius: 1rem;
     font-family: var(--fonte-primaria);
+}
+
+.output_after{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Ajuste a altura conforme necessário */
-    background-color: #f9f9f9; /* Ajuste a cor conforme necessário */
+    height: 100px;
+    background-color: #f9f9f9;
     font-family: var(--fonte-primaria);
     color: var(--cor-secundaria);
     text-align: center;
